@@ -7,7 +7,7 @@
 
 This solution was created to demonstrate a fully fledged backend application built with the low-code platform **[Linx](https://linx.software/)** including CRUD operations, authentication, routing, pagination, and more.
 
-We've gone to great lengths to adhere to the **[Linx](https://linx.software/)** community styleguides & best practices.
+We've gone to great lengths to adhere to the **[Linx](https://linx.software/)** community style guides & best practices.
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
@@ -21,11 +21,24 @@ For more information on how to this works with other frontends/backends, head ov
 - Favorite articles
 - Follow other users
 
-# How it works
 
 ## Installation
 
-### Cloud server deployment
+## Local environment
+The below steps describe how to setup the sample to run on your local Linx Designer environment.
+
+1. Download and install the Linx Designer [here](https://linx.software/server-buy2/).
+1. Open the sample Solution (.lsoz) in your Linx Designer.
+2. Alter the below Solution Settings:
+    - `LinxIsLocalDevEnv` : `True`
+3. Select the RESTHost service, right click and select __debug__. Once initialised, **start** the debugger.
+4. Once the debugger has started, you are able to make requests locally to:
+   ```
+   https://localhost:8080/realworld
+   ```
+
+
+## Cloud server deployment
 
 The below steps describe how to host this Solution on your own Linx cloud server environment.
 
@@ -75,18 +88,6 @@ The Solution uses a MySQL database to store user related credentials.
    https://{your instance name}.api.linx.twenty57.net/realworld
    ```
 
-### Local environment
-The below steps describe how to setup the sample to run on your local Linx Designer environment.
-
-1. Download and install the Linx Designer [here](https://linx.software/server-buy2/).
-1. Open the sample Solution (.lsoz) in your Linx Designer.
-2. Alter the below Solution Settings:
-    - `LinxIsLocalDevEnv` : `True`
-3. Select the RESTHost service, right click and select __debug__. Once initialised, **start** the debugger.
-4. Once the debugger has started, you are able to make requests locally to:
-   ```
-   https://localhost:8080/realworld
-   ```
 
 # Getting started
 ### Swagger UI
