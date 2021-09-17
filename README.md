@@ -96,7 +96,7 @@ The below steps describe how to setup the sample to run on your local Linx Desig
 ### Postman
 1. Open Postman and import the provided collection in Postman.
 2. Alter the collection variables to reflect your cloud environment. 
-3. Open each request and pass or change parameters and body values as described in the API spec section.
+3. Open each request and pass or change parameters and body values as described in the [RealWorld API Spec](https://github.com/gothinkster/realworld/tree/main/api).
 
 ***Authentication Header:***
 
