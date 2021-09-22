@@ -17,8 +17,9 @@
 							"script": {
 								"exec": [
 									"var res = pm.response.json();",
-									"console.log(res.user)",
-									"pm.variables.set('token', res.user.token);",
+									"pm.globals.set('token', res.user.token);",
+									"",
+									"",
 									"",
 									""
 								],
@@ -43,7 +44,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": {\r\n        \"email\": \"sweet@gmail.com\",\r\n        \"password\": \"12345678\",\r\n        \"username\": \"sweet\"\r\n    }\r\n}\r\n\r\n\r\n//{\"body\":{\"user\":{\"email\":\"159test@gmail.com\", \"password\":\"12345678\"}}}"
+							"raw": "{\r\n    \"user\": {\r\n        \"email\": \"mike@gmail.com\",\r\n        \"password\": \"12345678\",\r\n        \"username\": \"mike\"\r\n    }\r\n}\r\n\r\n\r\n//{\"body\":{\"user\":{\"email\":\"159test@gmail.com\", \"password\":\"12345678\"}}}"
 						},
 						"url": {
 							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/realworld/users",
@@ -1280,16 +1281,16 @@
 	],
 	"variable": [
 		{
-			"key": "token",
-			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIiLCJzdWIiOiIiLCJhdWQiOiIiLCJleHAiOiIxNjMxOTg3MjgyLjUwMjk4MTIiLCJuYmYiOiIiLCJpYXQiOiIiLCJqdGkiOiIiLCJ1bmlxdWVfbmFtZSI6ImpvaG4ifQ.2o5YTbfokAKCeU6BJbfwM9_NlpRG2GHiV-hS2xu8Cvg"
-		},
-		{
 			"key": "ApiBaseUri",
 			"value": "https://"
 		},
 		{
 			"key": "LinxServerNameAddress",
 			"value": ".api.linx.twenty57.net"
+		},
+		{
+			"key": "LinxDemoServerName",
+			"value": "demo"
 		}
 	]
 }
