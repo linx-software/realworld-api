@@ -159,8 +159,8 @@ DELIMITER ;
 DELIMITER $$
 
 DROP PROCEDURE IF EXISTS `UpdateUser`;
-CREATE PROCEDURE `UpdateUser` (IN p_Email varchar(1000),
-	IN p_Username varchar(1000))
+CREATE PROCEDURE `UpdateUser` (IN p_Email varchar(50),
+	IN p_Username varchar(100))
 BEGIN
 UPDATE APIUser   SET 
       email = p_Email
