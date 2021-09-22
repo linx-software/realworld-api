@@ -155,5 +155,16 @@ INSERT INTO APIUser
            );
 SELECT LAST_INSERT_ID() INTO id;
 END$$
+DELIMITER ;
+DELIMITER $$
 
+DROP PROCEDURE IF EXISTS `UpdateUser`;
+CREATE PROCEDURE `UpdateUser` (IN p_Email varchar(50),
+	IN p_Username varchar(100))
+BEGIN
+UPDATE APIUser   SET 
+      email = p_Email
+ WHERE Username = p_Username ;
+   
+END$$
 DELIMITER ;
