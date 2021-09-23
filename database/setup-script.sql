@@ -113,8 +113,8 @@ CREATE TABLE IF NOT EXISTS `Comment` (
  
   FOREIGN KEY (ArticleID) REFERENCES Article(ID)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-DELIMITER $$
 
+DELIMITER $$
 DROP PROCEDURE IF EXISTS `InsertArticleComment`;
 CREATE PROCEDURE `InsertArticleComment`(
        IN p_createdAt datetime,
@@ -137,7 +137,7 @@ INSERT INTO Comment
            );
 SELECT LAST_INSERT_ID() INTO id;
 END$$
-DELIMITER $$
+
 
 DROP PROCEDURE IF EXISTS `InsertUser`;
 CREATE PROCEDURE `InsertUser`(IN p_username varchar(100) , IN user_password varchar(1000), IN p_email varchar(50),  IN p_CreatedAt datetime, OUT id int )

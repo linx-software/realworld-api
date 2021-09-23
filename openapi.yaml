@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: RealWorld API
-  description: Linx medium API
+  description: Linx RealWorld API
   contact:
     name: RealWorld
     
@@ -695,13 +695,13 @@ components:
       properties:
         email:
           type: string
-        token:
-          type: string
         username:
           type: string
         bio:
           type: string
         image:
+          type: string
+        password:
           type: string
     UpdateUserRequest:
       required:
