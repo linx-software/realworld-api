@@ -176,6 +176,10 @@
 							"listen": "test",
 							"script": {
 								"exec": [
+									"",
+									"var res = pm.response.json();",
+									"pm.globals.set('token', res.user.token);",
+									"",
 									"var responseJSON = JSON.parse(responseBody);",
 									"",
 									"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
@@ -187,6 +191,7 @@
 									"tests['User has \"bio\" property'] = user.hasOwnProperty('bio');",
 									"tests['User has \"image\" property'] = user.hasOwnProperty('image');",
 									"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+									"",
 									""
 								],
 								"type": "text/javascript"
@@ -211,7 +216,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": {\r\n        \"email\": \"{{EMAIL}}\"\r\n    }\r\n}"
+							"raw": "{\r\n    \"user\": {\r\n        \"email\": \"sunny@gmail.com\",\r\n        \"password\" : 123494565,\r\n        \"username\":\"sunny\"\r\n    }\r\n}"
 						},
 						"url": {
 							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/realworld/user",
