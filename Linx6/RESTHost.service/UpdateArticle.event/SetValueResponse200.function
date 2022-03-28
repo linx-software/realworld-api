@@ -1,0 +1,146 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:rr9d",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"article\":{\"slug\":{\"LinxExpression\":\"[PARSED]\"}, \"title\":{\"LinxExpression\":\"[PARSED]\"}, \"description\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"tagList\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"favorited\":{\"LinxExpression\":\"[PARSED]\"}, \"favoritesCount\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "slug"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.slug",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "title"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.title",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "description"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.description",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "body"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "tagList"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.tagList",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.createdAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.updatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "favorited"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.favoritesCount>0?\"True\":\"False\"",
+              "CompiledExpression": "={0}>0?\"True\":\"False\"",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "favoritesCount"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.favoritesCount",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "article",
+              "author"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.article.article.author",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:OFVQ"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:rr9d",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:rr9d"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

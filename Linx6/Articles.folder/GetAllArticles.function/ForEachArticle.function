@@ -1,0 +1,24 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Generated:4spa",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Generated:4spa",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetAllArticles",
+        "CompiledExpression": "={0}",
+        "Type": "List:Generated:4spa"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

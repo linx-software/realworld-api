@@ -1,0 +1,34 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:349M",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:349M",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"user\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "user",
+              "username"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.HttpContext.Headers.SelectMany(headers => headers.Value).Where(item => item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+              "CompiledExpression": "={0}.SelectMany(headers=>headers.Value).Where(item=>item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "Result": "Custom:349M"
+}

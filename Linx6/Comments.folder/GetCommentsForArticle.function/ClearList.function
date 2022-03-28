@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:oqhT",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "comment.comments",
+        "CompiledExpression": "={0}",
+        "Type": "List:Custom:oqhT"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

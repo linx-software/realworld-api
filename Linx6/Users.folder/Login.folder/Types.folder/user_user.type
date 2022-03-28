@@ -1,0 +1,46 @@
+{
+  "Id": "5RGx",
+  "Name": "user_user",
+  "Properties": [
+    {
+      "Id": "pCKx",
+      "Name": "email",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "bDdB",
+      "Name": "token",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "ybdZ",
+      "Name": "username",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "qYtK",
+      "Name": "bio",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "96qH",
+      "Name": "image",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "gxST",
+      "Name": "createdAt",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "sIgJ",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "4Gqe",
+      "Name": "updatedAt",
+      "Type": "Compiled:DateTime"
+    }
+  ]
+}

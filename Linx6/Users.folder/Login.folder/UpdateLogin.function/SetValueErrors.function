@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:G7Bu",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":[\"Update failed!\"]}}, \"ResponseCode\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "ResponseCode"
+            ],
+            "expression": {
+              "Expression": "ResponseCode",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:G7Bu",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:G7Bu"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

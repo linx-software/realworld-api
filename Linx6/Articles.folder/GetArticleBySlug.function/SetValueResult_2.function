@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:uqtb",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"article\":{}, \"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "errors",
+              "errors",
+              "body",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "TryCatch.Catch.ErrorMessage",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:uqtb",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:uqtb"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

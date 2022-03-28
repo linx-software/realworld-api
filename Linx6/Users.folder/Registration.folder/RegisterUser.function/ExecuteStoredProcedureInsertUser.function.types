@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "CLAZ",
+      "Properties": [
+        {
+          "Id": "Result",
+          "Name": "Result",
+          "Type": "Generated:zdz3",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "zdz3",
+      "Properties": [
+        {
+          "Id": "id",
+          "Name": "id",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

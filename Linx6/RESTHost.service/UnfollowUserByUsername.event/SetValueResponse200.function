@@ -1,0 +1,74 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:COWv",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"profile\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "username"
+            ],
+            "expression": {
+              "Expression": "UnfollowUser.profile.profile.username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "UnfollowUser.profile.profile.bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "image"
+            ],
+            "expression": {
+              "Expression": "UnfollowUser.profile.profile.image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "following"
+            ],
+            "expression": {
+              "Expression": "UnfollowUser.profile.profile.following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:COWv",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:COWv"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

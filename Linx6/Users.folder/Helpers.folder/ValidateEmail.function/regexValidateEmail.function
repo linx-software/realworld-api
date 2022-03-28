@@ -1,0 +1,34 @@
+{
+  "Properties": [
+    {
+      "Id": "Action",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Text.RegularExpression.RegexAction, Twenty57.Linx.Plugins.Text, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "FirstMatch"
+    },
+    {
+      "Id": "Expression",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+    },
+    {
+      "Id": "Input string",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.email",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Options",
+      "Type": "Compiled:System.Text.RegularExpressions.RegexOptions, System.Text.RegularExpressions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+      "ValueUsage": "DesignTime",
+      "Value": "None"
+    }
+  ],
+  "Result": "Generated:9WTr"
+}

@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:Db4m",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"HttpContext\":{\"StatusCode\":200}}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:Db4m",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:Db4m"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

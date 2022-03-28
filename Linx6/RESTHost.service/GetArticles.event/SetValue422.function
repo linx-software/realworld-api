@@ -1,0 +1,37 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:ukGp",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors"
+            ],
+            "expression": {
+              "Expression": "GetAllArticles.errors.errors",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:qe7V"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:ukGp",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:ukGp"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

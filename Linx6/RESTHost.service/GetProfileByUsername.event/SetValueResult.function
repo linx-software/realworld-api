@@ -1,0 +1,74 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:JJhe",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":200}, \"Response200\":{\"profile\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetProfileByUsername.profile.username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetProfileByUsername.profile.bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetProfileByUsername.profile.image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "profile",
+              "following"
+            ],
+            "expression": {
+              "Expression": "GetProfileByUsername.profile.following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:JJhe",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:JJhe"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

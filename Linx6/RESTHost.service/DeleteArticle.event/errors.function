@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:xdDy",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:xdDy",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"errors\":{\"body\":[\"Delete failed. Not owned by user\"]}}",
+      "ValueType": "String"
+    }
+  ],
+  "Result": "Custom:xdDy"
+}

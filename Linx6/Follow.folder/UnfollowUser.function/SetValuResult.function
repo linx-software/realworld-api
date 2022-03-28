@@ -1,0 +1,74 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:WcHP",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"profile\":{\"profile\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}}, \"ResponseCode\":200}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "profile",
+              "profile",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetAuthorProfile.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "profile",
+              "profile",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetAuthorProfile.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "profile",
+              "profile",
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetAuthorProfile.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "profile",
+              "profile",
+              "following"
+            ],
+            "expression": {
+              "Expression": "GetAuthorProfile.Following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:WcHP",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:WcHP"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

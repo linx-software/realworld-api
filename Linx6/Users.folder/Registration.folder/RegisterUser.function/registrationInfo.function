@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:GZ3q",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:GZ3q",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"user\":{\"email\":\"\\\"\\\"\", \"username\":\"\\\"\\\"\", \"bio\":\"\\\"\\\"\", \"image\":\"\\\"\\\"\", \"token\":\"\\\"\\\"\", \"id\":0}}",
+      "ValueType": "String"
+    }
+  ],
+  "Result": "Custom:GZ3q"
+}

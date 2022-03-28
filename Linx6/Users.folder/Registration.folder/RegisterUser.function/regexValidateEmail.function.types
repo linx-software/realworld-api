@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "AKwK",
+      "Properties": [
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Groups",
+          "Name": "Groups",
+          "Type": "List:Generated:KRsQ",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Group1",
+          "Name": "Group1",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "KRsQ",
+      "Properties": [
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Captures",
+          "Name": "Captures",
+          "Type": "List:Generated:R0Sy",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "R0Sy",
+      "Properties": [
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

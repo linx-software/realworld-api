@@ -1,0 +1,37 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:dOlc",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"tags\":{\"tags\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "tags",
+              "tags"
+            ],
+            "expression": {
+              "Expression": "tags.tags",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:dOlc",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:dOlc"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

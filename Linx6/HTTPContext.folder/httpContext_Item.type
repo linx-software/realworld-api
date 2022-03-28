@@ -1,0 +1,16 @@
+{
+  "Id": "bN4C",
+  "Name": "httpContext_Item",
+  "Properties": [
+    {
+      "Id": "S7Rj",
+      "Name": "key",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "dUWB",
+      "Name": "Value",
+      "Type": "Compiled:String"
+    }
+  ]
+}

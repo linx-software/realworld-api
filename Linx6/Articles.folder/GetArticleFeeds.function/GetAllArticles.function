@@ -1,0 +1,170 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachRow",
+      "Name": "ForEachRow",
+      "Result": "Generated:YREf",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.TempConnectionString",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc"
+    },
+    {
+      "Id": "Design-time connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "DesignTime",
+      "Value": ""
+    },
+    {
+      "Id": "Design-time connection type",
+      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc",
+      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetArticleFromFilter.ForEachRow.articleid",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.limit",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "ExpressionCount",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 2
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "Bio",
+            "Name": "Bio",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Image",
+            "Name": "Image",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Username",
+            "Name": "Username",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Email",
+            "Name": "Email",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Following",
+            "Name": "Following",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "ID",
+            "Name": "ID",
+            "TypeReference": "Compiled:Int64"
+          },
+          {
+            "ColumnName": "Slug",
+            "Name": "Slug",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Title",
+            "Name": "Title",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Description",
+            "Name": "Description",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Body",
+            "Name": "Body",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "Author",
+            "Name": "Author",
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "ColumnName": "CreatedAt",
+            "Name": "CreatedAt",
+            "TypeReference": "Compiled:DateTime"
+          },
+          {
+            "ColumnName": "UpdatedAt",
+            "Name": "UpdatedAt",
+            "TypeReference": "Compiled:DateTime"
+          },
+          {
+            "ColumnName": "FavouritesCount",
+            "Name": "FavouritesCount",
+            "TypeReference": "Compiled:Int64"
+          }
+        ],
+        "IsCustomType": false
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "RowByRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT distinct usr.Bio, usr.Image, usr.Username, usr.Email, usr.Following,\r\n       a.ID\r\n      ,a.Slug\r\n      ,a.Title\r\n      ,a.Description\r\n      ,a.Body\r\n      ,a.Author\r\n      ,a.CreatedAt\r\n      ,a.UpdatedAt\r\n      ,a.FavouritesCount\r\nFROM Article a\r\nINNER JOIN APIUser usr \r\nON a.Author= usr.Username  \r\nwhere a.ID=@{GetArticleFromFilter.ForEachRow.articleid} \r\nLIMIT @{$.Parameters.limit}\r\n\r\n\r\n\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ]
+}

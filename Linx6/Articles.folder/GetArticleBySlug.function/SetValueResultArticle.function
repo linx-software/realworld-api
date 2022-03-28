@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:uqtb",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"article\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "article"
+            ],
+            "expression": {
+              "Expression": "article",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:PiV6"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:uqtb",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:uqtb"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

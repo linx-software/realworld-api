@@ -1,0 +1,43 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:ku19",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:ku19",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"exp\":{\"LinxExpression\":\"[PARSED]\"}, \"unique_name\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "exp"
+            ],
+            "expression": {
+              "Expression": "($.Parameters.DateTiimeStamp - \"1970-01-01\".ToDateTime(\"yyyy-MM-dd\")).TotalSeconds + $.Settings.JWTExpirySeconds",
+              "CompiledExpression": "=({1}-System.DateTime.ParseExact(\"1970-01-01\",\"yyyy-MM-dd\",null)).TotalSeconds+{0}",
+              "Type": "Compiled:Double"
+            }
+          },
+          {
+            "typePath": [
+              "unique_name"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.userName",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "Result": "Custom:ku19"
+}

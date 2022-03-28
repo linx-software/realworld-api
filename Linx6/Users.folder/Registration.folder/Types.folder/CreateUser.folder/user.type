@@ -1,0 +1,21 @@
+{
+  "Id": "GWJI",
+  "Name": "user",
+  "Properties": [
+    {
+      "Id": "V9cR",
+      "Name": "email",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "mVd8",
+      "Name": "password",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Kxr6",
+      "Name": "username",
+      "Type": "Compiled:String"
+    }
+  ]
+}

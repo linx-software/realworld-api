@@ -1,0 +1,170 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:c6uY",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "Articles",
+        "CompiledExpression": "={0}",
+        "Type": "List:Custom:c6uY"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:c6uY",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"slug\":{\"LinxExpression\":\"[PARSED]\"}, \"title\":{\"LinxExpression\":\"[PARSED]\"}, \"description\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"tagList\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"},\"bio\":{\"LinxExpression\":\"[PARSED]\"},\"image\":{\"LinxExpression\":\"[PARSED]\"},\"following\":{\"LinxExpression\":\"[PARSED]\"}}, \"favoritesCount\":{\"LinxExpression\":\"[PARSED]\"}, \"favorited\":{\"LinxExpression\":\"[PARSED]\"}, \"id\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "slug"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Slug",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "title"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Slug",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "description"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Description",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "body"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "tagList"
+            ],
+            "expression": {
+              "Expression": "Tags",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "username"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Author",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "image"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "following"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.Following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "favoritesCount"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.FavouritesCount",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "favorited"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.FavouritesCount>0?\"True\":\"False\"",
+              "CompiledExpression": "={0}>0?\"True\":\"False\"",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "id"
+            ],
+            "expression": {
+              "Expression": "ForEachArticle.Loop.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ]
+}

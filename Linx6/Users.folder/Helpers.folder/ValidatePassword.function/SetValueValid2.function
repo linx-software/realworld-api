@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:4Itu",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"error\":\"\", \"password\":{\"LinxExpression\":\"[PARSED]\"}, \"valid\":true}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "password"
+            ],
+            "expression": {
+              "Expression": "GenerateHash",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:4Itu",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:4Itu"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

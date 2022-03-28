@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "YR4a",
+      "Properties": [
+        {
+          "Id": "9GYY",
+          "Name": "username",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "nn57",
+      "Properties": [
+        {
+          "Id": "2zI0",
+          "Name": "error",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "s2JU",
+          "Name": "valid",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

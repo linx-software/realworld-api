@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:WyFz",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":404}, \"Response200\":{}, \"Response422\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors",
+              "body",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "TryCatch.Catch.ErrorMessage",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:WyFz",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:WyFz"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:DrKo",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"body\":[\"Oops login failed! Try again..\"]}}}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:DrKo",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:DrKo"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

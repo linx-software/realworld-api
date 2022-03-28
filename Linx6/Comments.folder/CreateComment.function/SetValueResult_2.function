@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:3LLl",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"comment\":{}, \"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}, \"responseCode\":400}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "errors",
+              "errors",
+              "body",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "TryCatch.Catch.ErrorMessage",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:3LLl",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:3LLl"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

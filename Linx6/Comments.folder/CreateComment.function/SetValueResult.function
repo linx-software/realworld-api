@@ -1,0 +1,118 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:3LLl",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"comment\":{\"id\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}}, \"responseCode\":200}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "comment",
+              "id"
+            ],
+            "expression": {
+              "Expression": "GetComment.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "GetComment.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "GetComment.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "body"
+            ],
+            "expression": {
+              "Expression": "GetComment.Body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "author",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetComment.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "author",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetComment.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "author",
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetComment.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "comment",
+              "author",
+              "following"
+            ],
+            "expression": {
+              "Expression": "GetComment.Following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:3LLl",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:3LLl"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

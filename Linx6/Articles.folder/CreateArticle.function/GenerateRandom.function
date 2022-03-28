@@ -1,0 +1,16 @@
+{
+  "Properties": [
+    {
+      "Id": "Number of bytes",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "2",
+        "CompiledExpression": "=2",
+        "Type": "Compiled:Int32"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:Twenty57.Linx.Plugins.Cryptography.Common.Binary, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null"
+}

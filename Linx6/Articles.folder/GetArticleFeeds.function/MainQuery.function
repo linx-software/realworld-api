@@ -1,0 +1,11 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT DISTINCT a.ID as articleid    \r\nFROM Article a\r\nINNER JOIN ArticleTag tg ON a.ID= tg.ArticleID"
+    }
+  ],
+  "Result": "Compiled:String"
+}

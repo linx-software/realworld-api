@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:OxMh",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"error\":\"\", \"valid\":true}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:OxMh",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:OxMh"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

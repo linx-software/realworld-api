@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "Tags",
+        "CompiledExpression": "={0}",
+        "Type": "List:Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

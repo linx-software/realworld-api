@@ -1,0 +1,37 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:M6Dc",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors"
+            ],
+            "expression": {
+              "Expression": "GetCommentsForArticle.errors.errors",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:qe7V"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:M6Dc",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:M6Dc"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

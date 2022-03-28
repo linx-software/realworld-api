@@ -1,0 +1,106 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Custom:5RGx",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"email\":{\"LinxExpression\":\"[PARSED]\"}, \"token\":{\"LinxExpression\":\"[PARSED]\"}, \"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"id\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "email"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.Email",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "token"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.HttpContext.Headers.SelectMany(headers => headers.Value).Where(item => item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+              "CompiledExpression": "={0}.SelectMany(headers=>headers.Value).Where(item=>item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "id"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "GetUserForLoggedUserName.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Custom:5RGx",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "user.user",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:5RGx"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

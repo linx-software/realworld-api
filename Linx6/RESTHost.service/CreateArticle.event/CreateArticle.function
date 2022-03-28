@@ -1,0 +1,106 @@
+{
+  "Properties": [
+    {
+      "Id": "AUK4",
+      "Type": "Custom:PiV6",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"article\":{\"slug\":{\"LinxExpression\":\"[PARSED]\"}, \"title\":{\"LinxExpression\":\"[PARSED]\"}, \"description\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"tagList\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "article",
+              "slug"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.body.article.title",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "title"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.body.article.title",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "description"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.body.article.description",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "body"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.body.article.body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "tagList"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.body.article.tagList",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "author",
+              "username"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.HttpContext.User.Name",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "AUK4": "article"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Twenty57.Linx.Interfaces.StandardComponent.IProcessReference, Twenty57.Linx.Interfaces.StandardComponent, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "6aLL",
+        "Name": "Articles.CreateArticle",
+        "Parameters": "Generated:3rV5",
+        "Result": "Generated:P5mP",
+        "IsValid": true,
+        "QualifiedPath": "FL:Articles→PC:CreateArticle"
+      },
+      "ValueType": "Twenty57.Linx.Domain.ProcessReference, Twenty57.Linx.Domain, Version=6.0.5.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ],
+  "Result": "Generated:P5mP"
+}

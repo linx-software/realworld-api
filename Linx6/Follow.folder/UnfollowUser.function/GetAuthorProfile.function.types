@@ -1,0 +1,34 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "q2Hj",
+      "Properties": [
+        {
+          "Id": "Username",
+          "Name": "Username",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Bio",
+          "Name": "Bio",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Image",
+          "Name": "Image",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Following",
+          "Name": "Following",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

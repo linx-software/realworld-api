@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:DUEX",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"errors\":{\"errors\":{\"body\":[\"Login failed\"]}}}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:DUEX",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:DUEX"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

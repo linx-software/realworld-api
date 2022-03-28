@@ -1,0 +1,11 @@
+{
+  "Id": "stGJ",
+  "Name": "comment",
+  "Properties": [
+    {
+      "Id": "HguI",
+      "Name": "comments",
+      "Type": "List:Custom:oqhT"
+    }
+  ]
+}

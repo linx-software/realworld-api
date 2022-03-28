@@ -1,0 +1,94 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachRow",
+      "Name": "ForEachRow",
+      "Result": "Generated:4Hp6",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.TempConnectionString",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc"
+    },
+    {
+      "Id": "Design-time connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "DesignTime",
+      "Value": ""
+    },
+    {
+      "Id": "Design-time connection type",
+      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc",
+      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEachArticle.Loop.ID",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "ExpressionCount",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 1
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [
+          {
+            "ColumnName": "Tag",
+            "Name": "Tag",
+            "TypeReference": "Compiled:String"
+          }
+        ],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ReturnModeType, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "RowByRow"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "SELECT Tag\r\nFROM ArticleTag where ArticleID= @{ForEachArticle.Loop.ID}\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ]
+}

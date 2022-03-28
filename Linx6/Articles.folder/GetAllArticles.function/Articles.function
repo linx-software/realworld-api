@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:c6uY",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "List:Custom:c6uY",
+      "ValueUsage": "RuntimeRead",
+      "Value": "[]",
+      "ValueType": "String"
+    }
+  ],
+  "Result": "List:Custom:c6uY"
+}

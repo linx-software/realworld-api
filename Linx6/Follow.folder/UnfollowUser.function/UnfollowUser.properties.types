@@ -1,0 +1,22 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "WcHP",
+      "Properties": [
+        {
+          "Id": "qLRB",
+          "Name": "profile",
+          "Type": "Custom:fthX",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "fjDk",
+          "Name": "ResponseCode",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

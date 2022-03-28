@@ -1,0 +1,38 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:aHTF",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors",
+              "body"
+            ],
+            "expression": {
+              "Expression": "RegisterUser.errors.errors.body",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:aHTF",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:aHTF"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

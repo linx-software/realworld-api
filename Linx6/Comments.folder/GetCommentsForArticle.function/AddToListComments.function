@@ -1,0 +1,110 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:oqhT",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "comment.comments",
+        "CompiledExpression": "={0}",
+        "Type": "List:Custom:oqhT"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:oqhT",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"id\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "id"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "body"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.Body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "author",
+              "following"
+            ],
+            "expression": {
+              "Expression": "GetComments.ForEachRow.Following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ]
+}

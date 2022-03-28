@@ -1,0 +1,70 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "DIDM",
+      "Properties": [
+        {
+          "Id": "Bio",
+          "Name": "Bio",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Image",
+          "Name": "Image",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Username",
+          "Name": "Username",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Following",
+          "Name": "Following",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ID",
+          "Name": "ID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Body",
+          "Name": "Body",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Author",
+          "Name": "Author",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "CreatedAt",
+          "Name": "CreatedAt",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UpdatedAt",
+          "Name": "UpdatedAt",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ArticleID",
+          "Name": "ArticleID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

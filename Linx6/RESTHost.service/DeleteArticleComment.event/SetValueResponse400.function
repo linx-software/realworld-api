@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:Db4m",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors",
+              "body",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "TryCatch.Catch.ErrorMessage",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:Db4m",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:Db4m"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

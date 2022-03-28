@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:dOlc",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "errors",
+              "errors",
+              "body",
+              "[]"
+            ],
+            "expression": {
+              "Expression": "TryCatch.Catch.ErrorMessage",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:dOlc",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:dOlc"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

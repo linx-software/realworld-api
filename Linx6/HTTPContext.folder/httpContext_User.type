@@ -1,0 +1,21 @@
+{
+  "Id": "LXrL",
+  "Name": "httpContext_User",
+  "Properties": [
+    {
+      "Id": "rCNG",
+      "Name": "Name",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Q2Fe",
+      "Name": "AuthenticationType",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "tpjx",
+      "Name": "IsAuthenticated",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

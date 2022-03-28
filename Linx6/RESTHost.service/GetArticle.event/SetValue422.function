@@ -1,0 +1,37 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:gtL3",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.errors",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:xdDy"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:gtL3",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:gtL3"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

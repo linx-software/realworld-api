@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS `RealWorld`;
 USE `RealWorld`;
 
-DROP TABLE IF EXISTS `APIUser`;
+
 CREATE TABLE IF NOT EXISTS `APIUser` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Username` varchar(100) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `APIUser` (
   UNIQUE KEY unique_Username (Username)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
-DROP TABLE IF EXISTS `Article`;
+
 CREATE TABLE IF NOT EXISTS `Article` (
     `ID` int NOT NULL AUTO_INCREMENT,
 	`Slug` varchar(1000)  NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `Article` (
  
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
-DROP TABLE IF EXISTS `Favourite`;
+
 CREATE TABLE IF NOT EXISTS `Favourite` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Slug` varchar(100) NOT NULL,
@@ -42,7 +42,6 @@ CREATE TABLE IF NOT EXISTS `Favourite` (
   FOREIGN KEY (UserName) REFERENCES APIUser(Username)  
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
-DROP TABLE IF EXISTS `Following`;
 CREATE TABLE IF NOT EXISTS `Following` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Author` varchar(100) NOT NULL,
@@ -59,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `Tag` (
   PRIMARY KEY (ID)
   
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-DROP TABLE IF EXISTS `ArticleTag`;
+
 CREATE TABLE IF NOT EXISTS `ArticleTag` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `ArticleID` int NOT NULL,
@@ -69,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `ArticleTag` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 DELIMITER $$
 
-DROP PROCEDURE IF EXISTS `InsertArticle`;
+
 CREATE PROCEDURE `InsertArticle`(
         IN p_Slug varchar(1000),
 	IN p_Title varchar(1000),
@@ -100,7 +99,7 @@ INSERT INTO Tag
            (
            'tag1'
            );
-DROP TABLE IF EXISTS `Comment`;	   
+
 CREATE TABLE IF NOT EXISTS `Comment` (
   `ID` int NOT NULL AUTO_INCREMENT, 
   `Body` text NOT NULL,
@@ -115,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `Comment` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 DELIMITER $$
-DROP PROCEDURE IF EXISTS `InsertArticleComment`;
+
 CREATE PROCEDURE `InsertArticleComment`(
        IN p_createdAt datetime,
 	IN p_Body text,
@@ -139,7 +138,7 @@ SELECT LAST_INSERT_ID() INTO id;
 END$$
 
 
-DROP PROCEDURE IF EXISTS `InsertUser`;
+
 CREATE PROCEDURE `InsertUser`(IN p_username varchar(100) , IN user_password varchar(1000), IN p_email varchar(50),  IN p_CreatedAt datetime, OUT id int )
 BEGIN
 INSERT INTO APIUser

@@ -1,0 +1,33 @@
+{
+  "Properties": [
+    {
+      "Id": "Algorithm",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Jwt.Common.JwtAlgorithm, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "HS256"
+    },
+    {
+      "Id": "Secret key",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Common.Binary, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.JWTTokenSecretSigningKey.ToBytes()",
+        "CompiledExpression": "=System.Text.Encoding.Default.GetBytes({0}).ToList()",
+        "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Token",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.HttpContext.Headers.SelectMany(headers => headers.Value).Where(item => item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+        "CompiledExpression": "={0}.SelectMany(headers=>headers.Value).Where(item=>item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Generated:QJIa"
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "Id": "PdFV",
+    "Name": "LinxIsLocalDevEnv",
+    "Type": "Compiled:Boolean",
+    "Value": "True"
+  },
+  {
+    "Id": "Ahzk",
+    "Name": "TempConnectionString",
+    "Type": "Compiled:String",
+    "Value": "Uid=root;Pwd=10_ataigiD;Driver={MySQLDriver};Server=localhost;Database=realworld;"
+  },
+  {
+    "Id": "GfLq",
+    "Name": "DatabaseConnString",
+    "Type": "Compiled:String",
+    "Value": "DRIVER={MySQLDriver};SERVER={LiveDatabaseServer};PORT={LiveDatabasePort};DATABASE={LiveDatabaseInstanceName};USER={LiveDatabaseUser};PASSWORD={LiveDatabasePassword};"
+  },
+  {
+    "Id": "vC3F",
+    "Name": "LiveDatabaseInstanceName",
+    "Type": "Compiled:String",
+    "Value": "RealWorld"
+  },
+  {
+    "Id": "LvPq",
+    "Name": "LiveDatabasePassword",
+    "Type": "Compiled:String",
+    "Secret": true
+  },
+  {
+    "Id": "3Ti2",
+    "Name": "LiveDatabasePort",
+    "Type": "Compiled:String",
+    "Value": "6603"
+  },
+  {
+    "Id": "C4I2",
+    "Name": "LiveDatabaseServer",
+    "Type": "Compiled:String",
+    "Value": "demolinx6db.linx.twenty57.net"
+  },
+  {
+    "Id": "Q5J8",
+    "Name": "LiveDatabaseUser",
+    "Type": "Compiled:String",
+    "Value": "ClientAdmin"
+  },
+  {
+    "Id": "YX4C",
+    "Name": "MySQLDriver",
+    "Type": "Compiled:String",
+    "Value": "{MySQL ODBC 8.0 ANSI Driver}"
+  },
+  {
+    "Id": "AqXl",
+    "Name": "LinxApiBaseUri",
+    "Type": "Compiled:String",
+    "Value": "http://localhost"
+  },
+  {
+    "Id": "jx3y",
+    "Name": "LinxApiPort",
+    "Type": "Compiled:String",
+    "Value": "8080"
+  },
+  {
+    "Id": "ddP3",
+    "Name": "JWTExpirySeconds",
+    "Type": "Compiled:Int64",
+    "Value": "125000"
+  },
+  {
+    "Id": "h4dB",
+    "Name": "JWTTokenSecretSigningKey",
+    "Type": "Compiled:String",
+    "Value": "my-32-character-ultra-secure-and-ultra-long-secret"
+  }
+]

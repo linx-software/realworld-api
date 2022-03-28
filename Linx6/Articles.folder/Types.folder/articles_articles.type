@@ -1,0 +1,61 @@
+{
+  "Id": "c6uY",
+  "Name": "articles_articles",
+  "Properties": [
+    {
+      "Id": "7zGZ",
+      "Name": "slug",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "G1g2",
+      "Name": "title",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "HFET",
+      "Name": "description",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "czMU",
+      "Name": "body",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "GJKe",
+      "Name": "createdAt",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "hV98",
+      "Name": "updatedAt",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "0Mim",
+      "Name": "tagList",
+      "Type": "List:Compiled:String"
+    },
+    {
+      "Id": "J7sm",
+      "Name": "author",
+      "Type": "Custom:OFVQ"
+    },
+    {
+      "Id": "eiUe",
+      "Name": "favoritesCount",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "E3pc",
+      "Name": "favorited",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "235T",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "  WHERE  a.Author = "
+    }
+  ],
+  "Result": "Compiled:String"
+}

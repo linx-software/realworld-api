@@ -1,0 +1,46 @@
+{
+  "Id": "RWPU",
+  "Name": "registration_info_user",
+  "Properties": [
+    {
+      "Id": "CAMf",
+      "Name": "email",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "HJ4h",
+      "Name": "username",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "8Y3Z",
+      "Name": "bio",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "I8vn",
+      "Name": "image",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "FlbI",
+      "Name": "token",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "vaAX",
+      "Name": "createdAt",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "TWJ2",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "p5L7",
+      "Name": "updatedAt",
+      "Type": "Compiled:DateTime"
+    }
+  ]
+}

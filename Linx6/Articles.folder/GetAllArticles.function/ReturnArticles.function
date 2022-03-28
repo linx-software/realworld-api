@@ -1,0 +1,48 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:1joO",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"articles\":{\"articles\":{\"LinxExpression\":\"[PARSED]\"}, \"articlesCount\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "articles",
+              "articles"
+            ],
+            "expression": {
+              "Expression": "Articles",
+              "CompiledExpression": "={0}",
+              "Type": "List:Custom:c6uY"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "articlesCount"
+            ],
+            "expression": {
+              "Expression": "Articles.Count()",
+              "CompiledExpression": "={0}.Count()",
+              "Type": "Compiled:Int32"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:1joO",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:1joO"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

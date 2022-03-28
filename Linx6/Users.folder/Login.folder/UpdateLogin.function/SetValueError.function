@@ -1,0 +1,48 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:G7Bu",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}, \"ResponseCode\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "errors",
+              "errors",
+              "body"
+            ],
+            "expression": {
+              "Expression": "ListErrors",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ResponseCode"
+            ],
+            "expression": {
+              "Expression": "ResponseCode",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:G7Bu",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:G7Bu"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

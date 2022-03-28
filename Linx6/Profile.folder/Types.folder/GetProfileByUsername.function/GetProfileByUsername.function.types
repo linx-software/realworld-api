@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "ZrIe",
+      "Properties": [
+        {
+          "Id": "Username",
+          "Name": "Username",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Email",
+          "Name": "Email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Image",
+          "Name": "Image",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Bio",
+          "Name": "Bio",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Following",
+          "Name": "Following",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

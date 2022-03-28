@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "kdPG",
+      "Properties": [
+        {
+          "Id": "fjkd",
+          "Name": "bio",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "MYDj",
+          "Name": "email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "wfO8",
+          "Name": "image",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "qbnJ",
+          "Name": "loggedUsername",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Mj2t",
+          "Name": "password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Bz9B",
+          "Name": "username",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "G7Bu",
+      "Properties": [
+        {
+          "Id": "tJEW",
+          "Name": "errors",
+          "Type": "Custom:xdDy",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "BI5L",
+          "Name": "ResponseCode",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

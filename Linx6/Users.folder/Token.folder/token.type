@@ -1,0 +1,21 @@
+{
+  "Id": "kqVf",
+  "Name": "token",
+  "Properties": [
+    {
+      "Id": "k1rA",
+      "Name": "token_type",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "2seS",
+      "Name": "expires_in",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "rOyx",
+      "Name": "access_token",
+      "Type": "Compiled:String"
+    }
+  ]
+}

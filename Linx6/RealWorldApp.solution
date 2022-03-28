@@ -1,0 +1,27 @@
+{
+  "ApplicationVersion": "6.0.5",
+  "Plugins": [
+    "twenty57.linx.plugins.cryptography, 1.0.1",
+    "twenty57.linx.plugins.database, 1.0.4",
+    "twenty57.linx.plugins.rest, 1.0.2",
+    "twenty57.linx.plugins.standard, 1.0.2",
+    "twenty57.linx.plugins.text, 1.0.2",
+    "twenty57.linx.plugins.utilities, 1.0.2"
+  ],
+  "Dependencies": [
+    "twenty57.linx.solutiondependencies.compilation, 1.1.2",
+    "twenty57.linx.solutiondependencies.types, 1.1.0"
+  ],
+  "Items": [
+    "Users.folder",
+    "APIkey.folder",
+    "RESTHost.service",
+    "HTTPContext.folder",
+    "Articles.folder",
+    "Helpers.folder",
+    "Comments.folder",
+    "Favourite.folder",
+    "Follow.folder",
+    "Profile.folder"
+  ]
+}

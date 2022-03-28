@@ -1,0 +1,208 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.TempConnectionString",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc"
+    },
+    {
+      "Id": "Design-time connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "DesignTime",
+      "Value": "Uid=root;Pwd=10_ataigiD;Driver={MySQL ODBC 8.0 ANSI Driver};Server=localhost;Database=realworld;"
+    },
+    {
+      "Id": "Design-time connection type",
+      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc",
+      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Id": "Design-time stored procedure",
+      "Type": "Compiled:String",
+      "ValueUsage": "DesignTime",
+      "Value": ".InsertArticleComment"
+    },
+    {
+      "Id": "id ​",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": 0,
+      "ValueType": "Int32"
+    },
+    {
+      "Id": "Number of result sets",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 1
+    },
+    {
+      "Id": "OutParametersTypePropertyNamesLookup",
+      "Type": "Compiled:System.Collections.Generic.IReadOnlyDictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": {},
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "Id": "Output option",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteStoredProcedure.OutputOption, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "FirstRow"
+    },
+    {
+      "Id": "p_ArticleID ​",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetArticleBySlug.article.article.id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Int64"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "p_Author ​",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "GetUserForUserName.username",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "p_Body ​",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.body",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "p_createdAt ​",
+      "Type": "Compiled:DateTime",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.System.CurrentDateTime.ToUniversalTime()",
+        "CompiledExpression": "={0}.ToUniversalTime()",
+        "Type": "Compiled:DateTime"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Parameters",
+      "Type": "Compiled:Twenty57.Database.Model.ProcedureParameters, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": [
+        {
+          "Direction": "In",
+          "Position": 0,
+          "RequiresSize": false,
+          "Name": "p_createdAt",
+          "DataType": "DateTime",
+          "Precision": 0,
+          "Scale": 10,
+          "Size": 19,
+          "IsNullable": true,
+          "DefaultValue": null
+        },
+        {
+          "Direction": "In",
+          "Position": 1,
+          "RequiresSize": false,
+          "Name": "p_Body",
+          "DataType": "AnsiString",
+          "Precision": null,
+          "Scale": null,
+          "Size": 65535,
+          "IsNullable": true,
+          "DefaultValue": null
+        },
+        {
+          "Direction": "In",
+          "Position": 2,
+          "RequiresSize": false,
+          "Name": "p_Author",
+          "DataType": "AnsiString",
+          "Precision": null,
+          "Scale": null,
+          "Size": 100,
+          "IsNullable": true,
+          "DefaultValue": null
+        },
+        {
+          "Direction": "In",
+          "Position": 3,
+          "RequiresSize": false,
+          "Name": "p_ArticleID",
+          "DataType": "Int32",
+          "Precision": 0,
+          "Scale": 10,
+          "Size": 10,
+          "IsNullable": true,
+          "DefaultValue": null
+        },
+        {
+          "Direction": "In",
+          "Position": 4,
+          "RequiresSize": false,
+          "Name": "id",
+          "DataType": "Int32",
+          "Precision": 0,
+          "Scale": 10,
+          "Size": 10,
+          "IsNullable": true,
+          "DefaultValue": null
+        }
+      ]
+    },
+    {
+      "Id": "Result set 1 fields",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteStoredProcedure.ResultSetOutput, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "FieldOutputProperties": [
+          {
+            "Field": {
+              "ColumnName": "id",
+              "DataType": "Int32"
+            },
+            "OutputName": "id"
+          }
+        ],
+        "CustomType": null
+      }
+    },
+    {
+      "Id": "Stored procedure",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ".InsertArticleComment"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "RuntimeRead",
+      "Value": 60
+    }
+  ],
+  "Result": "Generated:cgze",
+  "Version": "1"
+}

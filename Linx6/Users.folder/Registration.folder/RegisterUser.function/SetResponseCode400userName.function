@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:Y6aA",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"responseCode\":400}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:Y6aA",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:Y6aA"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

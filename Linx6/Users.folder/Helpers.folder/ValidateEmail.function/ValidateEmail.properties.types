@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "lDRt",
+      "Properties": [
+        {
+          "Id": "iE1z",
+          "Name": "email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "OxMh",
+      "Properties": [
+        {
+          "Id": "CoHx",
+          "Name": "error",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Baqm",
+          "Name": "valid",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

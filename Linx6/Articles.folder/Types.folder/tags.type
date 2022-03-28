@@ -1,0 +1,11 @@
+{
+  "Id": "q1Jf",
+  "Name": "tags",
+  "Properties": [
+    {
+      "Id": "PTue",
+      "Name": "tags",
+      "Type": "List:Compiled:String"
+    }
+  ]
+}

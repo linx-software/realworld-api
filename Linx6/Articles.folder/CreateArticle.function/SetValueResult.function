@@ -1,0 +1,147 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:P5mP",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"articles\":{\"article\":{\"slug\":{\"LinxExpression\":\"[PARSED]\"}, \"title\":{\"LinxExpression\":\"[PARSED]\"}, \"description\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"tagList\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}}, \"favoritesCount\":{\"LinxExpression\":\"[PARSED]\"}, \"favorited\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "slug"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.Slug",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "title"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.Title",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "description"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.Description",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "body"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.Body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "tagList"
+            ],
+            "expression": {
+              "Expression": "ListTag",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "author",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.Author",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "favoritesCount"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.FavouritesCount",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "article",
+              "favorited"
+            ],
+            "expression": {
+              "Expression": "GetArticleCreated.FavouritesCount.ToInt32() > 0 ? \"True\" : \"False\"",
+              "CompiledExpression": "=System.Convert.ToInt32({0})>0?\"True\":\"False\"",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:P5mP",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:P5mP"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

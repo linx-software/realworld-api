@@ -1,0 +1,46 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Custom:kqVf",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"token_type\":\"Token\", \"expires_in\":{\"LinxExpression\":\"[PARSED]\"}, \"access_token\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "expires_in"
+            ],
+            "expression": {
+              "Expression": "$.Settings.JWTExpirySeconds",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "access_token"
+            ],
+            "expression": {
+              "Expression": "CreateJWT",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Custom:kqVf",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:kqVf"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Custom:GZ3q",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"user\":{\"email\":{\"LinxExpression\":\"[PARSED]\"}, \"username\":{\"LinxExpression\":\"[PARSED]\"}, \"token\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"id\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "user",
+              "email"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQLGetUser.Email",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "user",
+              "username"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQLGetUser.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "user",
+              "token"
+            ],
+            "expression": {
+              "Expression": "GenerateToken.access_token",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "user",
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQLGetUser.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "user",
+              "id"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQLGetUser.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "user",
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQLGetUser.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Custom:GZ3q",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "registrationInfo",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:GZ3q"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

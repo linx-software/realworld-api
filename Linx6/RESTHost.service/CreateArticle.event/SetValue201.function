@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:UEd0",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":201}, \"Response201\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response201"
+            ],
+            "expression": {
+              "Expression": "CreateArticle.articles",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:PiV6"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:UEd0",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:UEd0"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

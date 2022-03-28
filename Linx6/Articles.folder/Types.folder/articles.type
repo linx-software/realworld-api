@@ -1,0 +1,16 @@
+{
+  "Id": "kgPm",
+  "Name": "articles",
+  "Properties": [
+    {
+      "Id": "9FpQ",
+      "Name": "articles",
+      "Type": "List:Custom:c6uY"
+    },
+    {
+      "Id": "mI6s",
+      "Name": "articlesCount",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

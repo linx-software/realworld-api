@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "3mhw",
+      "Properties": [
+        {
+          "Id": "s1eo",
+          "Name": "authorList",
+          "Type": "List:Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "oELR",
+          "Name": "limit",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "A9Vu",
+          "Name": "offset",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "TekK",
+      "Properties": [
+        {
+          "Id": "nbJM",
+          "Name": "articles",
+          "Type": "Custom:kgPm",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "JHhY",
+          "Name": "errors",
+          "Type": "Custom:xdDy",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

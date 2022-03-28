@@ -1,0 +1,16 @@
+{
+  "Id": "ZwZr",
+  "Name": "httpContext_Query",
+  "Properties": [
+    {
+      "Id": "QHzD",
+      "Name": "key",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Ib2Q",
+      "Name": "value",
+      "Type": "List:Compiled:String"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Properties": [
+    {
+      "Id": "Message",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "TryCatch.Catch.ErrorMessage",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

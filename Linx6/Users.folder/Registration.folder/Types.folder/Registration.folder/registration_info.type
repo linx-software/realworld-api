@@ -1,0 +1,11 @@
+{
+  "Id": "GZ3q",
+  "Name": "registration_info",
+  "Properties": [
+    {
+      "Id": "p1JP",
+      "Name": "user",
+      "Type": "Custom:RWPU"
+    }
+  ]
+}

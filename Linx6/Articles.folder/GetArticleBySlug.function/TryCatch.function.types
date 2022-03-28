@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "Kejx",
+      "Properties": [
+        {
+          "Id": "ErrorMessage",
+          "Name": "ErrorMessage",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

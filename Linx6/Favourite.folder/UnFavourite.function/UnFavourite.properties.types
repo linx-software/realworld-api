@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "EGSj",
+      "Properties": [
+        {
+          "Id": "18tZ",
+          "Name": "slug",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LUBa",
+          "Name": "username",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "RfQ7",
+      "Properties": [
+        {
+          "Id": "BNOe",
+          "Name": "errors",
+          "Type": "Custom:xdDy",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "f6AE",
+          "Name": "responseCode",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

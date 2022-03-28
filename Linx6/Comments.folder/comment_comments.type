@@ -1,0 +1,31 @@
+{
+  "Id": "oqhT",
+  "Name": "comment_comments",
+  "Properties": [
+    {
+      "Id": "GHxn",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "o9QR",
+      "Name": "createdAt",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "BaX5",
+      "Name": "updatedAt",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "GZAM",
+      "Name": "body",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Rbb5",
+      "Name": "author",
+      "Type": "Custom:dZ2F"
+    }
+  ]
+}

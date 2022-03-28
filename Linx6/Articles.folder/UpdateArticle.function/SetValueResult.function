@@ -1,0 +1,21 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": false
+    },
+    {
+      "Id": "Target",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Boolean"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

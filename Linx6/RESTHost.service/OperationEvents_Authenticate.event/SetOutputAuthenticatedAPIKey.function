@@ -1,0 +1,62 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.OpenAPIWebService.OpenAPI.OperationEvents.Authenticate.AuthenticateEventOutput, Twenty57.Linx.Plugins.Rest, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"User\":{\"Name\":{\"LinxExpression\":\"[PARSED]\"}, \"AuthenticationType\":{\"LinxExpression\":\"[PARSED]\"}, \"IsAuthenticated\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "HttpContext",
+              "User",
+              "Name"
+            ],
+            "expression": {
+              "Expression": "Authentication.Name",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "HttpContext",
+              "User",
+              "AuthenticationType"
+            ],
+            "expression": {
+              "Expression": "Authentication.AuthenticationType",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "HttpContext",
+              "User",
+              "IsAuthenticated"
+            ],
+            "expression": {
+              "Expression": "Authentication.IsAuthenticated",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Boolean"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.OpenAPIWebService.OpenAPI.OperationEvents.Authenticate.AuthenticateEventOutput, Twenty57.Linx.Plugins.Rest, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Twenty57.Linx.Plugins.Rest.OpenAPIWebService.OpenAPI.OperationEvents.Authenticate.AuthenticateEventOutput, Twenty57.Linx.Plugins.Rest, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

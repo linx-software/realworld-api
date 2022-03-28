@@ -1,0 +1,86 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:DrKo",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":200}, \"Response200\":{\"user\":{\"email\":{\"LinxExpression\":\"[PARSED]\"}, \"token\":{\"LinxExpression\":\"[PARSED]\"}, \"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "email"
+            ],
+            "expression": {
+              "Expression": "Login.user.user.email",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "token"
+            ],
+            "expression": {
+              "Expression": "Login.user.user.token",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "username"
+            ],
+            "expression": {
+              "Expression": "Login.user.user.username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "Login.user.user.bio!=$.System.Null?Login.user.user.bio : \"\"",
+              "CompiledExpression": "={2}!={1}?{0}:\"\"",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "image"
+            ],
+            "expression": {
+              "Expression": "Login.user.user.image!=$.System.Null?Login.user.user.image : \"\"",
+              "CompiledExpression": "={2}!={1}?{0}:\"\"",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:DrKo",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:DrKo"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

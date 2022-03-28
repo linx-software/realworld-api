@@ -1,0 +1,26 @@
+{
+  "Id": "OFVQ",
+  "Name": "articles_articles_author",
+  "Properties": [
+    {
+      "Id": "FgUl",
+      "Name": "username",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "pQHf",
+      "Name": "bio",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "aMzo",
+      "Name": "image",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "82fr",
+      "Name": "following",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:TekK",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"articles\":{\"articles\":{\"LinxExpression\":\"[PARSED]\"}, \"articlesCount\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "articles",
+              "articles"
+            ],
+            "expression": {
+              "Expression": "articles.articles",
+              "CompiledExpression": "={0}",
+              "Type": "List:Custom:c6uY"
+            }
+          },
+          {
+            "typePath": [
+              "articles",
+              "articlesCount"
+            ],
+            "expression": {
+              "Expression": "articles.articlesCount",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:TekK",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:TekK"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

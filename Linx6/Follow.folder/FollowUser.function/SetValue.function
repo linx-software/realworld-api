@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Custom:fthX",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"profile\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "profile"
+            ],
+            "expression": {
+              "Expression": "GetAuthorProfile",
+              "CompiledExpression": "={0}",
+              "Type": "Generated:6Jze"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Custom:fthX",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:fthX"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

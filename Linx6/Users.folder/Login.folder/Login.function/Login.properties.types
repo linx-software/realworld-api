@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "nUrT",
+      "Properties": [
+        {
+          "Id": "gsHs",
+          "Name": "email",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "f1JM",
+          "Name": "password",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "DUEX",
+      "Properties": [
+        {
+          "Id": "lg2a",
+          "Name": "errors",
+          "Type": "Custom:xdDy",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "xZJ3",
+          "Name": "user",
+          "Type": "Custom:349M",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

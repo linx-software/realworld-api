@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "3nTw",
+      "Properties": [
+        {
+          "Id": "ul5z",
+          "Name": "article",
+          "Type": "Custom:PiV6",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

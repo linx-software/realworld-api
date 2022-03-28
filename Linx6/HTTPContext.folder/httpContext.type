@@ -1,0 +1,96 @@
+{
+  "Id": "bIhK",
+  "Name": "httpContext",
+  "Properties": [
+    {
+      "Id": "UffZ",
+      "Name": "ActionName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "0BqJ",
+      "Name": "QueryString",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "3Je1",
+      "Name": "ContentType",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "M2sH",
+      "Name": "ContentLength",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "R8rC",
+      "Name": "Cookies",
+      "Type": "List:Compiled:String"
+    },
+    {
+      "Id": "Nd1L",
+      "Name": "Headers",
+      "Type": "List:Custom:Shol"
+    },
+    {
+      "Id": "KFNh",
+      "Name": "Protocol",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "XKPD",
+      "Name": "Query",
+      "Type": "List:Compiled:String"
+    },
+    {
+      "Id": "M3ED",
+      "Name": "Path",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "ddBZ",
+      "Name": "PathBase",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Nhok",
+      "Name": "Host",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "SQsc",
+      "Name": "IsHttps",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "SF7t",
+      "Name": "Scheme",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "8BwU",
+      "Name": "Method",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "ChyP",
+      "Name": "User",
+      "Type": "Custom:LXrL"
+    },
+    {
+      "Id": "1XY7",
+      "Name": "Items",
+      "Type": "List:Custom:bN4C"
+    },
+    {
+      "Id": "z6lb",
+      "Name": "Connection",
+      "Type": "Custom:zIBQ"
+    },
+    {
+      "Id": "9VF5",
+      "Name": "Body",
+      "Type": "Compiled:String"
+    }
+  ]
+}

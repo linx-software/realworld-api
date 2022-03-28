@@ -1,0 +1,64 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "BvDZ",
+      "Properties": [
+        {
+          "Id": "ID",
+          "Name": "ID",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Slug",
+          "Name": "Slug",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Title",
+          "Name": "Title",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Description",
+          "Name": "Description",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Body",
+          "Name": "Body",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Author",
+          "Name": "Author",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "CreatedAt",
+          "Name": "CreatedAt",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "UpdatedAt",
+          "Name": "UpdatedAt",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "FavouritesCount",
+          "Name": "FavouritesCount",
+          "Type": "Compiled:Int64",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

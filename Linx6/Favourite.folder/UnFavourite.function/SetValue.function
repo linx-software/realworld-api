@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:RfQ7",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"errors\":{\"errors\":{\"body\":[\"Operation failed\"]}}, \"responseCode\":400}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:RfQ7",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:RfQ7"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

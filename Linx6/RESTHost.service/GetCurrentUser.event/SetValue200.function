@@ -1,0 +1,86 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:WyFz",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":200}, \"Response200\":{\"user\":{\"email\":{\"LinxExpression\":\"[PARSED]\"}, \"token\":{\"LinxExpression\":\"[PARSED]\"}, \"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}}}, \"Response422\":{}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "email"
+            ],
+            "expression": {
+              "Expression": "GetUserForUserName.Email",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "token"
+            ],
+            "expression": {
+              "Expression": "$.Parameters.HttpContext.Headers.SelectMany(headers => headers.Value).Where(item => item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+              "CompiledExpression": "={0}.SelectMany(headers=>headers.Value).Where(item=>item.StartsWith(\"Token \")).First().Replace(\"Token \",\"\")",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetUserForUserName.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetUserForUserName.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "user",
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetUserForUserName.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:WyFz",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:WyFz"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:Y6aA",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}, \"registrationInfo\":{\"LinxExpression\":\"[PARSED]\"}, \"responseCode\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "errors",
+              "errors",
+              "body"
+            ],
+            "expression": {
+              "Expression": "ListErrors",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "registrationInfo"
+            ],
+            "expression": {
+              "Expression": "registrationInfo",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:GZ3q"
+            }
+          },
+          {
+            "typePath": [
+              "responseCode"
+            ],
+            "expression": {
+              "Expression": "ResponseCode",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:Y6aA",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:Y6aA"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

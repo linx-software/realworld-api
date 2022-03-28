@@ -1,0 +1,184 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Custom:PiV6",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"article\":{\"slug\":{\"LinxExpression\":\"[PARSED]\"}, \"title\":{\"LinxExpression\":\"[PARSED]\"}, \"description\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"tagList\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}, \"favoritesCount\":{\"LinxExpression\":\"[PARSED]\"}, \"favorited\":{\"LinxExpression\":\"[PARSED]\"}, \"id\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "article",
+              "slug"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Slug",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "title"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Title",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "description"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Description",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "body"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Body",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "createdAt"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.CreatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "updatedAt"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.UpdatedAt",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:DateTime"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "tagList"
+            ],
+            "expression": {
+              "Expression": "ListTag",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "author",
+              "username"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Username",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "author",
+              "bio"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Bio",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "author",
+              "image"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Image",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "author",
+              "following"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.Following",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "favoritesCount"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.FavouritesCount",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "favorited"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.FavouritesCount>0?\"True\":\"False\"",
+              "CompiledExpression": "={0}>0?\"True\":\"False\"",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "article",
+              "id"
+            ],
+            "expression": {
+              "Expression": "GetArticleBySlug.ForEachRow.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Custom:PiV6",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "article",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:PiV6"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

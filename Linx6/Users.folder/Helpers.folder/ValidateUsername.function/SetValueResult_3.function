@@ -1,0 +1,22 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:nn57",
+      "ValueUsage": "RuntimeRead",
+      "Value": "{\"error\":\"\", \"valid\":true}",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:nn57",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:nn57"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

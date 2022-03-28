@@ -1,0 +1,26 @@
+{
+  "Id": "pxzG",
+  "Name": "profile_profile",
+  "Properties": [
+    {
+      "Id": "OUWe",
+      "Name": "username",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "domy",
+      "Name": "bio",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "eqAy",
+      "Name": "image",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "ipXx",
+      "Name": "following",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

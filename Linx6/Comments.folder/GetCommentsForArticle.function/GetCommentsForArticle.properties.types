@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "jh71",
+      "Properties": [
+        {
+          "Id": "EXRk",
+          "Name": "slug",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "VKPY",
+      "Properties": [
+        {
+          "Id": "bs86",
+          "Name": "comments",
+          "Type": "Custom:stGJ",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "6WhL",
+          "Name": "errors",
+          "Type": "Custom:xdDy",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

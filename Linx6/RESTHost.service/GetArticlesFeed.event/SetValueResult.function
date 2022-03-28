@@ -1,0 +1,48 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:P0tk",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"articles\":{\"LinxExpression\":\"[PARSED]\"}, \"articlesCount\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200",
+              "articles"
+            ],
+            "expression": {
+              "Expression": "GetArticleFeeds.articles.articles",
+              "CompiledExpression": "={0}",
+              "Type": "List:Custom:c6uY"
+            }
+          },
+          {
+            "typePath": [
+              "Response200",
+              "articlesCount"
+            ],
+            "expression": {
+              "Expression": "GetArticleFeeds.articles.articlesCount",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:P0tk",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:P0tk"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

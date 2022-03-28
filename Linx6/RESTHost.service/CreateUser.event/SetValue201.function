@@ -1,0 +1,37 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:aHTF",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":201}, \"Response201\":{\"user\":{\"LinxExpression\":\"[PARSED]\"}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response201",
+              "user"
+            ],
+            "expression": {
+              "Expression": "RegisterUser.registrationInfo.user",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:RWPU"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:aHTF",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:aHTF"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

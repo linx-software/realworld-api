@@ -1,0 +1,38 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Generated:R5kx",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors",
+              "body"
+            ],
+            "expression": {
+              "Expression": "CreateComment.errors.errors.body",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Generated:R5kx",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:R5kx"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

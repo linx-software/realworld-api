@@ -1,0 +1,22 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "dOlc",
+      "Properties": [
+        {
+          "Id": "ZMOL",
+          "Name": "errors",
+          "Type": "Custom:xdDy",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "5GqY",
+          "Name": "tags",
+          "Type": "Custom:q1Jf",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

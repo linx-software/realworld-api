@@ -1,0 +1,33 @@
+{
+  "Properties": [
+    {
+      "Id": "Algorithm",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Jwt.Common.JwtAlgorithm, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "HS256"
+    },
+    {
+      "Id": "Payload",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "jwt_payload",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:ku19"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Secret key",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Cryptography.Common.Binary, Twenty57.Linx.Plugins.Cryptography, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.JWTTokenSecretSigningKey.ToBytes().ToBase64()",
+        "CompiledExpression": "=System.Convert.ToBase64String(System.Text.Encoding.Default.GetBytes({0}).ToList().ToArray())",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:String"
+}
