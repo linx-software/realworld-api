@@ -9,7 +9,7 @@
     "Id": "Ahzk",
     "Name": "TempConnectionString",
     "Type": "Compiled:String",
-    "Value": "Uid=root;Pwd=10_ataigiD;Driver={MySQLDriver};Server=localhost;Database=realworld;"
+    "Value": ""
   },
   {
     "Id": "GfLq",
@@ -21,7 +21,7 @@
     "Id": "vC3F",
     "Name": "LiveDatabaseInstanceName",
     "Type": "Compiled:String",
-    "Value": "RealWorld"
+    "Value": ""
   },
   {
     "Id": "LvPq",
@@ -33,19 +33,19 @@
     "Id": "3Ti2",
     "Name": "LiveDatabasePort",
     "Type": "Compiled:String",
-    "Value": "6603"
+    "Value": ""
   },
   {
     "Id": "C4I2",
     "Name": "LiveDatabaseServer",
     "Type": "Compiled:String",
-    "Value": "demolinx6db.linx.twenty57.net"
+    "Value": ""
   },
   {
     "Id": "Q5J8",
     "Name": "LiveDatabaseUser",
     "Type": "Compiled:String",
-    "Value": "ClientAdmin"
+    "Value": ""
   },
   {
     "Id": "YX4C",
