@@ -6,14 +6,8 @@
     "Value": "True"
   },
   {
-    "Id": "Ahzk",
-    "Name": "TempConnectionString",
-    "Type": "Compiled:String",
-    "Value": ""
-  },
-  {
     "Id": "GfLq",
-    "Name": "DatabaseConnString",
+    "Name": "TempConnectionString",
     "Type": "Compiled:String",
     "Value": "DRIVER={MySQLDriver};SERVER={LiveDatabaseServer};PORT={LiveDatabasePort};DATABASE={LiveDatabaseInstanceName};USER={LiveDatabaseUser};PASSWORD={LiveDatabasePassword};"
   },

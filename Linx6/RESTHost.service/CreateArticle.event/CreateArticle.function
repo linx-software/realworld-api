@@ -89,7 +89,7 @@
     },
     {
       "Id": "Process",
-      "Type": "Compiled:Twenty57.Linx.Interfaces.StandardComponent.IProcessReference, Twenty57.Linx.Interfaces.StandardComponent, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Linx.IProcessReference",
       "ValueUsage": "DesignTime",
       "Value": {
         "Id": "6aLL",
@@ -99,7 +99,7 @@
         "IsValid": true,
         "QualifiedPath": "FL:Articles→PC:CreateArticle"
       },
-      "ValueType": "Twenty57.Linx.Domain.ProcessReference, Twenty57.Linx.Domain, Version=6.0.5.0, Culture=neutral, PublicKeyToken=null"
+      "ValueType": "Linx.ProcessReference"
     }
   ],
   "Result": "Generated:P5mP"

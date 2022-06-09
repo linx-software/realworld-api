@@ -13,22 +13,9 @@
     },
     {
       "Id": "Connection type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
       "Value": "Odbc"
-    },
-    {
-      "Id": "Design-time connection string",
-      "Type": "Compiled:String",
-      "ValueUsage": "DesignTime",
-      "Value": ""
-    },
-    {
-      "Id": "Design-time connection type",
-      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "DesignTime",
-      "Value": "Odbc",
-      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "Id": "Expression0",
@@ -86,14 +73,8 @@
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "ExpressionCount",
-      "Type": "Compiled:Int32",
-      "ValueUsage": "DesignTime",
-      "Value": 5
-    },
-    {
       "Id": "Result type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
       "Value": {
         "CustomType": null,
@@ -113,5 +94,6 @@
       "ValueUsage": "DesignTime",
       "Value": 60
     }
-  ]
+  ],
+  "Version": "2"
 }
