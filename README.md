@@ -3,7 +3,7 @@
 > ### [Linx](https://linx.software/) solution containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
 
-### [Demo](https://demo.api.linx.twenty57.net/realworld/swagger/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+### [Linx5 Demo](https://demo.api.linx.twenty57.net/realworld/swagger/)&nbsp;&nbsp;&nbsp;&nbsp;[Linx6 Demo](https://demolinx6.api.linx.twenty57.net/RealWorld/swagger/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
 
 This solution was created to demonstrate a fully fledged backend application built with the low-code platform **[Linx](https://linx.software/)** including CRUD operations, authentication, routing, pagination, and more.
 
