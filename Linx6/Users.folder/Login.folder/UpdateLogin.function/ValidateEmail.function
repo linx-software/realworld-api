@@ -23,12 +23,12 @@
         "Id": "Ra2U",
         "Name": "Users.Helpers.ValidateEmail",
         "Parameters": "Generated:lDRt",
-        "Result": "Generated:OxMh",
+        "Result": "Custom:Hnww",
         "IsValid": true,
         "QualifiedPath": "FL:Users→FL:Helpers→PC:ValidateEmail"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:OxMh"
+  "Result": "Custom:Hnww"
 }

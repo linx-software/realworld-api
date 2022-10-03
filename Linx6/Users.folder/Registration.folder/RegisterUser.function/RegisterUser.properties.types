@@ -12,31 +12,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "Y6aA",
-      "Properties": [
-        {
-          "Id": "Osi2",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "5wrQ",
-          "Name": "registrationInfo",
-          "Type": "Custom:GZ3q",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "vIlc",
-          "Name": "responseCode",
-          "Type": "Compiled:Int64",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

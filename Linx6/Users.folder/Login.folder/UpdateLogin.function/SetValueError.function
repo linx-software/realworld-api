@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:G7Bu",
+      "Type": "Custom:2XuA",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}, \"ResponseCode\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -35,12 +35,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:G7Bu",
+      "Type": "Custom:2XuA",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:G7Bu"
+        "Type": "Custom:2XuA"
       },
       "ValueType": "Linx.CSharpExpression"
     }

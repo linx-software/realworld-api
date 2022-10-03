@@ -11,7 +11,7 @@
       "Type": "Compiled:Boolean",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
         "Type": "Compiled:Boolean"
       },

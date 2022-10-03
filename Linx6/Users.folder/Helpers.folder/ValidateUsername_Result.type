@@ -1,0 +1,16 @@
+{
+  "Id": "zS6S",
+  "Name": "ValidateUsername_Result",
+  "Properties": [
+    {
+      "Id": "p0w9",
+      "Name": "error",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "bRtV",
+      "Name": "valid",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

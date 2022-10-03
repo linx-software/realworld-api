@@ -15,12 +15,12 @@
         "Id": "QQeh",
         "Name": "Articles.GetAllTags",
         "Parameters": null,
-        "Result": "Generated:dOlc",
+        "Result": "Custom:O6Rd",
         "IsValid": true,
         "QualifiedPath": "FL:Articles→PC:GetAllTags"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:dOlc"
+  "Result": "Custom:O6Rd"
 }

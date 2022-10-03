@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:DUEX",
+      "Type": "Custom:AoaK",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"user\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -23,12 +23,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:DUEX",
+      "Type": "Custom:AoaK",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:DUEX"
+        "Type": "Custom:AoaK"
       },
       "ValueType": "Linx.CSharpExpression"
     }

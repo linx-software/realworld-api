@@ -2,19 +2,19 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:nn57",
+      "Type": "Custom:zS6S",
       "ValueUsage": "RuntimeRead",
       "Value": "{\"error\":\"Username already taken\", \"valid\":false}",
       "ValueType": "String"
     },
     {
       "Id": "Target",
-      "Type": "Generated:nn57",
+      "Type": "Custom:zS6S",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:nn57"
+        "Type": "Custom:zS6S"
       },
       "ValueType": "Linx.CSharpExpression"
     }

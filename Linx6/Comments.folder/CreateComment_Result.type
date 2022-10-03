@@ -1,0 +1,21 @@
+{
+  "Id": "m1nX",
+  "Name": "CreateComment_Result",
+  "Properties": [
+    {
+      "Id": "CRV5",
+      "Name": "comment",
+      "Type": "Custom:oqhT"
+    },
+    {
+      "Id": "hqMD",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "dpuF",
+      "Name": "responseCode",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

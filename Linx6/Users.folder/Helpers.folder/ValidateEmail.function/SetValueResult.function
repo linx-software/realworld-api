@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:OxMh",
+      "Type": "Custom:Hnww",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"error\":\"Invalid email\", \"valid\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -23,12 +23,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:OxMh",
+      "Type": "Custom:Hnww",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:OxMh"
+        "Type": "Custom:Hnww"
       },
       "ValueType": "Linx.CSharpExpression"
     }

@@ -40,12 +40,12 @@
         "Id": "i120",
         "Name": "Users.Login.Login",
         "Parameters": "Generated:nUrT",
-        "Result": "Generated:DUEX",
+        "Result": "Custom:AoaK",
         "IsValid": true,
         "QualifiedPath": "FL:Users→FL:Login→PC:Login"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:DUEX"
+  "Result": "Custom:AoaK"
 }

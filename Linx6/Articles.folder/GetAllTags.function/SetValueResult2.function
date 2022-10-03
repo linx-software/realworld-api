@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:dOlc",
+      "Type": "Custom:O6Rd",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"tags\":{\"tags\":{\"LinxExpression\":\"[PARSED]\"}}}",
@@ -24,12 +24,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:dOlc",
+      "Type": "Custom:O6Rd",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:dOlc"
+        "Type": "Custom:O6Rd"
       },
       "ValueType": "Linx.CSharpExpression"
     }

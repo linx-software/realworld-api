@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:3LLl",
+      "Type": "Custom:m1nX",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"comment\":{}, \"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}, \"responseCode\":400}",
@@ -26,12 +26,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:3LLl",
+      "Type": "Custom:m1nX",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:3LLl"
+        "Type": "Custom:m1nX"
       },
       "ValueType": "Linx.CSharpExpression"
     }

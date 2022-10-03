@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:Y6aA",
+      "Type": "Custom:1Oc4",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}, \"registrationInfo\":{\"LinxExpression\":\"[PARSED]\"}, \"responseCode\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -45,12 +45,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:Y6aA",
+      "Type": "Custom:1Oc4",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:Y6aA"
+        "Type": "Custom:1Oc4"
       },
       "ValueType": "Linx.CSharpExpression"
     }

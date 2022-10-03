@@ -52,12 +52,12 @@
         "Id": "0l7M",
         "Name": "Comments.CreateComment",
         "Parameters": "Generated:9bGf",
-        "Result": "Generated:3LLl",
+        "Result": "Custom:m1nX",
         "IsValid": true,
         "QualifiedPath": "FL:Comments→PC:CreateComment"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:3LLl"
+  "Result": "Custom:m1nX"
 }

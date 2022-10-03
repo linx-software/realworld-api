@@ -42,25 +42,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "G7Bu",
-      "Properties": [
-        {
-          "Id": "tJEW",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "BI5L",
-          "Name": "ResponseCode",
-          "Type": "Compiled:Int64",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

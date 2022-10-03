@@ -40,12 +40,12 @@
         "Id": "Io3t",
         "Name": "Favourite.UnFavourite",
         "Parameters": "Generated:EGSj",
-        "Result": "Generated:RfQ7",
+        "Result": "Custom:BCKs",
         "IsValid": true,
         "QualifiedPath": "FL:Favourite→PC:UnFavourite"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:RfQ7"
+  "Result": "Custom:BCKs"
 }

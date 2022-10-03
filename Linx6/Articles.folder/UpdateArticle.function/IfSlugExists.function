@@ -1,24 +1,8 @@
 {
-  "ExecutionPaths": [
-    {
-      "PluginId": "Wml4",
-      "Name": "ArticleExists",
-      "Result": null,
-      "Order": 0,
-      "IterationHint": "ZeroOrOnce"
-    },
-    {
-      "PluginId": "Else",
-      "Name": "Else",
-      "Result": null,
-      "Order": 1,
-      "IterationHint": "ZeroOrOnce"
-    }
-  ],
   "Properties": [
     {
       "Id": "Conditions",
-      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Standard.IfElse.Condition, Twenty57.Linx.Plugins.Standard, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Standard.IfElse.Condition, Twenty57.Linx.Plugins.Standard, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
       "ValueUsage": "DesignTime",
       "Value": [
         {
@@ -50,5 +34,28 @@
       "ValueUsage": "DesignTime",
       "Value": true
     }
-  ]
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "Wml4",
+      "Name": "ArticleExists",
+      "Result": null,
+      "Order": 0,
+      "IterationHint": "ZeroOrOnce",
+      "ConstitutesControlFlow": true
+    },
+    {
+      "PluginId": "Else",
+      "Name": "Else",
+      "Result": null,
+      "Order": 1,
+      "IterationHint": "ZeroOrOnce",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": false,
+    "ExecutionPathExecution": "OneOrMore"
+  },
+  "Version": "1"
 }

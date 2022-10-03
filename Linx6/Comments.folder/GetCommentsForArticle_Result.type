@@ -1,0 +1,16 @@
+{
+  "Id": "WvcF",
+  "Name": "GetCommentsForArticle_Result",
+  "Properties": [
+    {
+      "Id": "ViJ1",
+      "Name": "comments",
+      "Type": "Custom:stGJ"
+    },
+    {
+      "Id": "WKMB",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    }
+  ]
+}

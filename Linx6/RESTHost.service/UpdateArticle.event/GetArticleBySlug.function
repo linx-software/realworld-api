@@ -17,7 +17,7 @@
         "Id": "EYkm",
         "Name": "Articles.GetArticleBySlug",
         "Parameters": "Generated:qjbw",
-        "Result": "Generated:uqtb",
+        "Result": "Custom:wpKO",
         "IsValid": true,
         "QualifiedPath": "FL:Articles→PC:GetArticleBySlug"
       },
@@ -35,5 +35,5 @@
       "ValueType": "Linx.CSharpExpression"
     }
   ],
-  "Result": "Generated:uqtb"
+  "Result": "Custom:wpKO"
 }

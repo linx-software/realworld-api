@@ -24,25 +24,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "TekK",
-      "Properties": [
-        {
-          "Id": "nbJM",
-          "Name": "articles",
-          "Type": "Custom:kgPm",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "JHhY",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

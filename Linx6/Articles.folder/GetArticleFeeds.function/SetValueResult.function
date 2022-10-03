@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:TekK",
+      "Type": "Custom:n0A9",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"articles\":{\"articles\":{\"LinxExpression\":\"[PARSED]\"}, \"articlesCount\":{\"LinxExpression\":\"[PARSED]\"}}}",
@@ -35,12 +35,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:TekK",
+      "Type": "Custom:n0A9",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:TekK"
+        "Type": "Custom:n0A9"
       },
       "ValueType": "Linx.CSharpExpression"
     }

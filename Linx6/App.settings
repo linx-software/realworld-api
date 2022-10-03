@@ -7,7 +7,7 @@
   },
   {
     "Id": "GfLq",
-    "Name": "TempConnectionString",
+    "Name": "DatabaseConnString",
     "Type": "Compiled:String",
     "Value": "DRIVER={MySQLDriver};SERVER={LiveDatabaseServer};PORT={LiveDatabasePort};DATABASE={LiveDatabaseInstanceName};USER={LiveDatabaseUser};PASSWORD={LiveDatabasePassword};"
   },

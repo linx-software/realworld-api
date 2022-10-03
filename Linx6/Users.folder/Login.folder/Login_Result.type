@@ -1,0 +1,16 @@
+{
+  "Id": "AoaK",
+  "Name": "Login_Result",
+  "Properties": [
+    {
+      "Id": "02S6",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "8Gs9",
+      "Name": "user",
+      "Type": "Custom:349M"
+    }
+  ]
+}

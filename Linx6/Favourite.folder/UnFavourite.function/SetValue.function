@@ -2,19 +2,19 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:RfQ7",
+      "Type": "Custom:BCKs",
       "ValueUsage": "RuntimeRead",
       "Value": "{\"errors\":{\"errors\":{\"body\":[\"Operation failed\"]}}, \"responseCode\":400}",
       "ValueType": "String"
     },
     {
       "Id": "Target",
-      "Type": "Generated:RfQ7",
+      "Type": "Custom:BCKs",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:RfQ7"
+        "Type": "Custom:BCKs"
       },
       "ValueType": "Linx.CSharpExpression"
     }

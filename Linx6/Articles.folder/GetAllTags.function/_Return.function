@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Custom:O6Rd",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "_Result",
+        "CompiledExpression": "={0}",
+        "Type": "Custom:O6Rd"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

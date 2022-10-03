@@ -28,12 +28,12 @@
         "Id": "s654",
         "Name": "Users.Registration.RegisterUser",
         "Parameters": "Generated:cAfx",
-        "Result": "Generated:Y6aA",
+        "Result": "Custom:1Oc4",
         "IsValid": true,
         "QualifiedPath": "FL:Users→FL:Registration→PC:RegisterUser"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:Y6aA"
+  "Result": "Custom:1Oc4"
 }

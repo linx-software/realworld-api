@@ -95,12 +95,12 @@
         "Id": "6aLL",
         "Name": "Articles.CreateArticle",
         "Parameters": "Generated:3rV5",
-        "Result": "Generated:P5mP",
+        "Result": "Custom:lrzu",
         "IsValid": true,
         "QualifiedPath": "FL:Articles→PC:CreateArticle"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:P5mP"
+  "Result": "Custom:lrzu"
 }

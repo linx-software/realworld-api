@@ -1,0 +1,16 @@
+{
+  "Id": "lrzu",
+  "Name": "CreateArticle_Result",
+  "Properties": [
+    {
+      "Id": "SZZD",
+      "Name": "articles",
+      "Type": "Custom:PiV6"
+    },
+    {
+      "Id": "LFE7",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    }
+  ]
+}

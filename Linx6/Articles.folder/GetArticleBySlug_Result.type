@@ -1,0 +1,16 @@
+{
+  "Id": "wpKO",
+  "Name": "GetArticleBySlug_Result",
+  "Properties": [
+    {
+      "Id": "VY1D",
+      "Name": "article",
+      "Type": "Custom:PiV6"
+    },
+    {
+      "Id": "oFLw",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    }
+  ]
+}

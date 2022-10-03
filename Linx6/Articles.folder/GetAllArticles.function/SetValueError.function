@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:1joO",
+      "Type": "Custom:mFTX",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
@@ -26,12 +26,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:1joO",
+      "Type": "Custom:mFTX",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:1joO"
+        "Type": "Custom:mFTX"
       },
       "ValueType": "Linx.CSharpExpression"
     }

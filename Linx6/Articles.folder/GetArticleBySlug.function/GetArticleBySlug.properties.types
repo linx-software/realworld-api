@@ -12,25 +12,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "uqtb",
-      "Properties": [
-        {
-          "Id": "gQCs",
-          "Name": "article",
-          "Type": "Custom:PiV6",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "BHvm",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

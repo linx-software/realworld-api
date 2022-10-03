@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:P5mP",
+      "Type": "Custom:lrzu",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
@@ -26,12 +26,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:P5mP",
+      "Type": "Custom:lrzu",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:P5mP"
+        "Type": "Custom:lrzu"
       },
       "ValueType": "Linx.CSharpExpression"
     }

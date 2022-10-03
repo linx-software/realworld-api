@@ -1,0 +1,16 @@
+{
+  "Id": "Hnww",
+  "Name": "ValidateEmail_Result",
+  "Properties": [
+    {
+      "Id": "fkLQ",
+      "Name": "error",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "5kGc",
+      "Name": "valid",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

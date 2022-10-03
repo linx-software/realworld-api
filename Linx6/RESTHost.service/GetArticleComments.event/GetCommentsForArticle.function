@@ -28,12 +28,12 @@
         "Id": "2IeA",
         "Name": "Comments.GetCommentsForArticle",
         "Parameters": "Generated:jh71",
-        "Result": "Generated:VKPY",
+        "Result": "Custom:WvcF",
         "IsValid": true,
         "QualifiedPath": "FL:Comments→PC:GetCommentsForArticle"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:VKPY"
+  "Result": "Custom:WvcF"
 }

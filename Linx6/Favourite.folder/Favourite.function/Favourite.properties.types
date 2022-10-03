@@ -18,25 +18,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "WJiB",
-      "Properties": [
-        {
-          "Id": "WTkU",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "DkRM",
-          "Name": "responseCode",
-          "Type": "Compiled:Int64",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

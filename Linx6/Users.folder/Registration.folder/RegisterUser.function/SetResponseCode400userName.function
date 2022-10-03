@@ -2,19 +2,19 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:Y6aA",
+      "Type": "Custom:1Oc4",
       "ValueUsage": "RuntimeRead",
       "Value": "{\"responseCode\":400}",
       "ValueType": "String"
     },
     {
       "Id": "Target",
-      "Type": "Generated:Y6aA",
+      "Type": "Custom:1Oc4",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:Y6aA"
+        "Type": "Custom:1Oc4"
       },
       "ValueType": "Linx.CSharpExpression"
     }

@@ -24,31 +24,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "3LLl",
-      "Properties": [
-        {
-          "Id": "rMTy",
-          "Name": "comment",
-          "Type": "Custom:oqhT",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "f7l2",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "u8tc",
-          "Name": "responseCode",
-          "Type": "Compiled:Int64",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

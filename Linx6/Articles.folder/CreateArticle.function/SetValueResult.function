@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:P5mP",
+      "Type": "Custom:lrzu",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"articles\":{\"article\":{\"slug\":{\"LinxExpression\":\"[PARSED]\"}, \"title\":{\"LinxExpression\":\"[PARSED]\"}, \"description\":{\"LinxExpression\":\"[PARSED]\"}, \"body\":{\"LinxExpression\":\"[PARSED]\"}, \"createdAt\":{\"LinxExpression\":\"[PARSED]\"}, \"updatedAt\":{\"LinxExpression\":\"[PARSED]\"}, \"tagList\":{\"LinxExpression\":\"[PARSED]\"}, \"author\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}}, \"favoritesCount\":{\"LinxExpression\":\"[PARSED]\"}, \"favorited\":{\"LinxExpression\":\"[PARSED]\"}}}}",
@@ -134,12 +134,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:P5mP",
+      "Type": "Custom:lrzu",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:P5mP"
+        "Type": "Custom:lrzu"
       },
       "ValueType": "Linx.CSharpExpression"
     }

@@ -1,0 +1,31 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Generated:Eghw",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"HttpContext\":{\"StatusCode\":422}, \"Response422\":{\"errors\":{\"body\":{\"LinxExpression\":\"[PARSED]\"}}}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response422",
+              "errors",
+              "body"
+            ],
+            "expression": {
+              "Expression": "UpdateLogin.errors.errors.body",
+              "CompiledExpression": "={0}",
+              "Type": "List:Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
+}

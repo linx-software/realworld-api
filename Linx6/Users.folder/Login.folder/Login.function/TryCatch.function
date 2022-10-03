@@ -1,26 +1,33 @@
 {
+  "Properties": [
+    {
+      "Id": "Options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Standard.TryCatch.TryCatchOption, Twenty57.Linx.Plugins.Standard, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "TryCatch"
+    }
+  ],
   "ExecutionPaths": [
     {
       "PluginId": "Try",
       "Name": "Try",
       "Result": null,
       "Order": 0,
-      "IterationHint": "Once"
+      "IterationHint": "Once",
+      "ConstitutesControlFlow": true
     },
     {
       "PluginId": "Catch",
       "Name": "Catch",
       "Result": "Generated:h18N",
       "Order": 1,
-      "IterationHint": "ZeroOrOnce"
+      "IterationHint": "ZeroOrOnce",
+      "ConstitutesControlFlow": true
     }
   ],
-  "Properties": [
-    {
-      "Id": "Options",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Standard.TryCatch.TryCatchOption, Twenty57.Linx.Plugins.Standard, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "TryCatch"
-    }
-  ]
+  "RuntimeCharacteristics": {
+    "IsTerminating": false,
+    "ExecutionPathExecution": "OneOrMore"
+  },
+  "Version": "1"
 }

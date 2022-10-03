@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:4Itu",
+      "Type": "Custom:Bezt",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"password\":{\"LinxExpression\":\"[PARSED]\"}, \"valid\":true}",
@@ -23,12 +23,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:4Itu",
+      "Type": "Custom:Bezt",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:4Itu"
+        "Type": "Custom:Bezt"
       },
       "ValueType": "Linx.CSharpExpression"
     }

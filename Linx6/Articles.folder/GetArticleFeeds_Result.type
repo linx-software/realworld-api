@@ -1,0 +1,16 @@
+{
+  "Id": "n0A9",
+  "Name": "GetArticleFeeds_Result",
+  "Properties": [
+    {
+      "Id": "RRlY",
+      "Name": "articles",
+      "Type": "Custom:kgPm"
+    },
+    {
+      "Id": "QAsK",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    }
+  ]
+}

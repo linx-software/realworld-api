@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:VKPY",
+      "Type": "Custom:WvcF",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
@@ -26,12 +26,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:VKPY",
+      "Type": "Custom:WvcF",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:VKPY"
+        "Type": "Custom:WvcF"
       },
       "ValueType": "Linx.CSharpExpression"
     }

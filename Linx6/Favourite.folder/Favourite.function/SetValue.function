@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:WJiB",
+      "Type": "Custom:ybdo",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}, \"responseCode\":400}",
@@ -26,12 +26,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:WJiB",
+      "Type": "Custom:ybdo",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:WJiB"
+        "Type": "Custom:ybdo"
       },
       "ValueType": "Linx.CSharpExpression"
     }

@@ -53,7 +53,7 @@
         "Id": "eDps",
         "Name": "Articles.GetAllArticles",
         "Parameters": "Generated:Fxoz",
-        "Result": "Generated:1joO",
+        "Result": "Custom:mFTX",
         "IsValid": true,
         "QualifiedPath": "FL:Articles→PC:GetAllArticles"
       },
@@ -71,5 +71,5 @@
       "ValueType": "Linx.CSharpExpression"
     }
   ],
-  "Result": "Generated:1joO"
+  "Result": "Custom:mFTX"
 }

@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:WcHP",
+      "Type": "Custom:NTBK",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"profile\":{\"profile\":{\"username\":{\"LinxExpression\":\"[PARSED]\"}, \"bio\":{\"LinxExpression\":\"[PARSED]\"}, \"image\":{\"LinxExpression\":\"[PARSED]\"}, \"following\":{\"LinxExpression\":\"[PARSED]\"}}}, \"ResponseCode\":200}",
@@ -61,12 +61,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:WcHP",
+      "Type": "Custom:NTBK",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:WcHP"
+        "Type": "Custom:NTBK"
       },
       "ValueType": "Linx.CSharpExpression"
     }

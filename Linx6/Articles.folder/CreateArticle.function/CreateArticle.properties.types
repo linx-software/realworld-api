@@ -12,25 +12,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "P5mP",
-      "Properties": [
-        {
-          "Id": "7cFf",
-          "Name": "articles",
-          "Type": "Custom:PiV6",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "EB6F",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

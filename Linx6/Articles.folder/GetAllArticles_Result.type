@@ -1,0 +1,16 @@
+{
+  "Id": "mFTX",
+  "Name": "GetAllArticles_Result",
+  "Properties": [
+    {
+      "Id": "jZqj",
+      "Name": "articles",
+      "Type": "Custom:kgPm"
+    },
+    {
+      "Id": "Jsru",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    }
+  ]
+}

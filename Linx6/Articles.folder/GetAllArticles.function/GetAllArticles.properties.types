@@ -30,25 +30,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "1joO",
-      "Properties": [
-        {
-          "Id": "QG6t",
-          "Name": "articles",
-          "Type": "Custom:kgPm",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "hE16",
-          "Name": "errors",
-          "Type": "Custom:xdDy",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]

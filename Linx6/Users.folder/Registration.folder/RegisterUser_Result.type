@@ -1,0 +1,21 @@
+{
+  "Id": "1Oc4",
+  "Name": "RegisterUser_Result",
+  "Properties": [
+    {
+      "Id": "irw1",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "OfHi",
+      "Name": "registrationInfo",
+      "Type": "Custom:GZ3q"
+    },
+    {
+      "Id": "HHMZ",
+      "Name": "responseCode",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

@@ -1,22 +1,15 @@
 {
   "Properties": [
     {
-      "Id": "Source",
+      "Id": "Value",
       "Type": "Generated:Dgn7",
       "ValueUsage": "RuntimeRead",
       "Value": "{\"HttpContext\":{\"StatusCode\":200}}",
       "ValueType": "String"
-    },
-    {
-      "Id": "Target",
-      "Type": "Generated:Dgn7",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:Dgn7"
-      },
-      "ValueType": "Linx.CSharpExpression"
     }
-  ]
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
 }

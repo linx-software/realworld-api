@@ -1,0 +1,16 @@
+{
+  "Id": "NTBK",
+  "Name": "UnfollowUser_Result",
+  "Properties": [
+    {
+      "Id": "pp6z",
+      "Name": "profile",
+      "Type": "Custom:fthX"
+    },
+    {
+      "Id": "KKVB",
+      "Name": "ResponseCode",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

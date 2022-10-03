@@ -1,0 +1,16 @@
+{
+  "Id": "O6Rd",
+  "Name": "GetAllTags_Result",
+  "Properties": [
+    {
+      "Id": "5zCE",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "NpVt",
+      "Name": "tags",
+      "Type": "Custom:q1Jf"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:uqtb",
+      "Type": "Custom:wpKO",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"article\":{}, \"errors\":{\"errors\":{\"body\":[{\"LinxExpression\":\"[PARSED]\"}]}}}",
@@ -26,12 +26,12 @@
     },
     {
       "Id": "Target",
-      "Type": "Generated:uqtb",
+      "Type": "Custom:wpKO",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:uqtb"
+        "Type": "Custom:wpKO"
       },
       "ValueType": "Linx.CSharpExpression"
     }

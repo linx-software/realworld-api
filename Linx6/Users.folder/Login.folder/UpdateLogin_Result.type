@@ -1,0 +1,16 @@
+{
+  "Id": "2XuA",
+  "Name": "UpdateLogin_Result",
+  "Properties": [
+    {
+      "Id": "1aTl",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "dvup",
+      "Name": "ResponseCode",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

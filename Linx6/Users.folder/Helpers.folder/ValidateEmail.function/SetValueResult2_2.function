@@ -2,19 +2,19 @@
   "Properties": [
     {
       "Id": "Source",
-      "Type": "Generated:OxMh",
+      "Type": "Custom:Hnww",
       "ValueUsage": "RuntimeRead",
       "Value": "{\"error\":\"\", \"valid\":true}",
       "ValueType": "String"
     },
     {
       "Id": "Target",
-      "Type": "Generated:OxMh",
+      "Type": "Custom:Hnww",
       "ValueUsage": "RuntimeWrite",
       "Value": {
-        "Expression": "$.Result",
+        "Expression": "_Result",
         "CompiledExpression": "={0}",
-        "Type": "Generated:OxMh"
+        "Type": "Custom:Hnww"
       },
       "ValueType": "Linx.CSharpExpression"
     }

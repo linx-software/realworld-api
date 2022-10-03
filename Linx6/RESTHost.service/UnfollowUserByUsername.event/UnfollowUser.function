@@ -40,12 +40,12 @@
         "Id": "BKKT",
         "Name": "Follow.UnfollowUser",
         "Parameters": "Generated:ixBd",
-        "Result": "Generated:WcHP",
+        "Result": "Custom:NTBK",
         "IsValid": true,
         "QualifiedPath": "FL:Follow→PC:UnfollowUser"
       },
       "ValueType": "Linx.ProcessReference"
     }
   ],
-  "Result": "Generated:WcHP"
+  "Result": "Custom:NTBK"
 }

@@ -1,0 +1,16 @@
+{
+  "Id": "BCKs",
+  "Name": "UnFavourite_Result",
+  "Properties": [
+    {
+      "Id": "fUyn",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "E76s",
+      "Name": "responseCode",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

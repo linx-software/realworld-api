@@ -1,0 +1,16 @@
+{
+  "Id": "ybdo",
+  "Name": "Favourite_Result",
+  "Properties": [
+    {
+      "Id": "zUcj",
+      "Name": "errors",
+      "Type": "Custom:xdDy"
+    },
+    {
+      "Id": "wS3X",
+      "Name": "responseCode",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

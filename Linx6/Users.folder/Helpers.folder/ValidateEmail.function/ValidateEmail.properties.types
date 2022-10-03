@@ -12,25 +12,5 @@
         }
       ]
     }
-  },
-  {
-    "Type": "Generated",
-    "Value": {
-      "Id": "OxMh",
-      "Properties": [
-        {
-          "Id": "CoHx",
-          "Name": "error",
-          "Type": "Compiled:String",
-          "Access": "ReadWrite"
-        },
-        {
-          "Id": "Baqm",
-          "Name": "valid",
-          "Type": "Compiled:Boolean",
-          "Access": "ReadWrite"
-        }
-      ]
-    }
   }
 ]
